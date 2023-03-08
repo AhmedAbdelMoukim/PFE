@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			background-color: yellow;
+			color: mediumblue;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		
+		h1 {
+			color: white;
+			font-size: 36px;
+			margin-top: 50px;
+			text-shadow: 2px 2px mediumblue;
+		}
+		
+		form {
+			display: inline-block;
+			margin-top: 30px;
+			padding: 20px;
+			background-color: white;
+			border-radius: 10px;
+			box-shadow: 5px 5px mediumblue;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		
+		input[type=text], input[type=password] {
+			padding: 5px;
+			margin-bottom: 20px;
+			width: 100%;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 2px 2px mediumblue;
+		}
+		
+		input[type=submit] {
+			background-color: mediumblue;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			box-shadow: 2px 2px mediumblue;
+		}
+		
+		.forgot-password {
+			margin-top: 20px;
+			display: block;
+			text-align: right;
+		}
+		
+		.create-account {
+			margin-top: 20px;
+			display: block;
+			text-align: center;
+		}
+		
+		.footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			background-color: white;
+			padding: 10px;
+			box-shadow: 0 -2px mediumblue;
+		}
+		
+		.footer a {
+			color: mediumblue;
+			text-decoration: none;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Login Page</h1>
+	<form action="/login">
+		<label for="username">Username/Email:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Login">
+		<a href="#" class="forgot-password">Forgot password?</a>
+	</form>
+	<a href="#" class="create-account">Create account</a>
+	<div class="footer">
+		<a href="#">Terms of use</a>
+		<a href="#">Privacy policy</a>
+	</div>
+</body>
+</html>
