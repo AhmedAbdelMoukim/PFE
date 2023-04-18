@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add Contract</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      label {
+        display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="date"],
+      select {
+        width: 300px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #vehicle-details-container {
+        margin-top: 20px;
+      }
+      #vehicle-details-container label {
+        width: 180px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1>Add Contract</h1>
+
+    <form method="POST" action="/addContrat">
+      <label for="Id_Contrat">Contract ID:</label>
+      <input type="text" id="Id_Contrat" name="Id_Contrat"><br>
+
+      <label for="Ref_Contrar">Contract Reference:</label>
+      <input type="text" id="Ref_Contrat" name="Ref_Contrat"><br>
+
+      <label for="Date_Debut">Start Date:</label>
+      <input type="date" id="Date_Debut" name="Date_Debut"><br>
+
+      <label for="Date_F">End Date:</label>
+      <input type="date" id="Date_F" name="Date_F"><br>
+
+      <label for="validite">Validity:</label>
+      <select id="validite" name="validite">
+        <option value="true">Valid</option>
+        <option value="false">Not Valid</option>
+      </select><br>
+
+    
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

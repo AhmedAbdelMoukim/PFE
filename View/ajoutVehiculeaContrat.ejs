@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add Vehicle</title>
+  </head>
+  <body>
+    <h1>Add Vehicles to Contract <%= contract.Id_Contrat %></h1>
+   
+    <form method="POST" action="/addvehiculeContrat/<%= contract.Id_Contrat %>">
+      <label for="Code_Vehicule">Vehicle Code:</label>
+      <input type="text" name="Code_Vehicule"><br>
+
+      <label for="Matricule">Vehicle Plate:</label>
+      <input type="text" name="Matricule"><br>
+
+      <label for="state">Vehicle State:</label>
+      <input type="text" name="state"><br>
+
+      <label for="Id_Marque">Vehicle Brand ID:</label>
+      <input type="text" name="Id_Marque"><br>
+
+      <label for="Id_Genre">Vehicle Type ID:</label>
+      <input type="text" name="Id_Genre"><br>
+
+      <label for="Code_Str">Vehicle Code Str:</label>
+      <input type="text" name="Code_Str"><br>
+
+      <label for="Id_Type_V">Vehicle Type V:</label>
+      <input type="text" name="Id_Type_V"><br>
+
+      <button type="submit">Add Vehicle</button>
+    </form>
+  </body>
+</html>
