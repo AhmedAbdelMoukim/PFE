@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contract Vehicles</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.container {
+			width: 50%;
+			margin: 50px auto;
+			padding: 30px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+		}
+
+		select {
+			padding: 10px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		label {
+			display: block;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		button {
+			padding: 10px 20px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			background-color: #0066cc;
+			color: #fff;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		button:hover {
+			background-color: #0059b3;
+		}
+	</style>
+</head>
+<body>
+	<h1>Contract Vehicles</h1>
+	<div class="container">
+		<form action="/ReplaceVehiculePage" method="POST">
+			<label for="vehicle">Select a vehicle:</label>
+			<select name="vehicle" id="vehicle">
+				<% vehiculeIDs2.forEach(function(id) { %>
+					<option value="<%= id %>"><%= id %></option>
+				<% }) %>
+			</select>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

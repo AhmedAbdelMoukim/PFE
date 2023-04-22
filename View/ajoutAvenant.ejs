@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search for Contract by ID</title>
+  <style>
+    /* Add some styles to the page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type=text] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Search for Contract by ID</h1>
+  <form method="POST" action="/AvenantOptionPage">
+    <label for="contract_id">Contract ID:</label>
+    <input type="text" id="contract_id" name="contract_id">
+    <input type="submit" value="Search">
+  </form>
+</body>
+</html>

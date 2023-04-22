@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select an Option</title>
+    <style>
+        /* Add some styles to the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+
+        a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select an Option to <%= contratID %> </h1>
+        <ul>
+            <li><a href="/ajoutAvenantrelation?value=<%=contratID%>">Avenant prologation </a></li>
+            <li><a href="/ajoutAvenantVehicule?value=<%=contratID%>"> Avenant vehicule</a></li>
+            <li><a href="http://example.com/link3">Avenant chauffeur</a></li>
+            <li><a href="http://example.com/link4">Avenant prologation </a></li>
+        </ul>
+    </div>
+</body>
+</html>
