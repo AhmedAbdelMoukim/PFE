@@ -57,6 +57,7 @@
 			text-align: right;
 		}
 		
+	
 		.create-account {
 			margin-top: 20px;
 			display: block;
@@ -81,7 +82,7 @@
 </head>
 <body>
 	<h1>Login Page</h1>
-	<form action="/login">
+	<form action="">
 		<label for="username">Username/Email:</label>
 		<input type="text" id="username" name="username" required>
 		<label for="password">Password:</label>
@@ -89,10 +90,17 @@
 		<input type="submit" value="Login">
 		<a href="#" class="forgot-password">Forgot password?</a>
 	</form>
+	<!-- ---------------------------------------------------------->
+		<a href="/ajoutVehiculePage"> add vehicule </a>
+		<a href="/addContratPage"> add contract  </a>
+		<a href="/ajoutAvenantPage"> page d'avenant</a>
+
+	<!-- ----------------------------------------------------------->
 	<a href="#" class="create-account">Create account</a>
 	<div class="footer">
 		<a href="#">Terms of use</a>
 		<a href="#">Privacy policy</a>
+		
 	</div>
 </body>
 </html>
